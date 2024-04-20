@@ -15,8 +15,9 @@ export class Concierto {
     imagenModa2: string;
     textoModa1: string;
     textoModa2: string;
+    ventas: number;
 
-   constructor(id:number, titulo: string, descripcion: string, imagen: string, setList1: string[], setList2: string[], setList3: string[], setList4: string[], setList5: string[], setList6: string[], setList7: string[], setList8: string[], imagenModa1: string, imagenModa2: string, textoModa1: string, textoModa2: string) {
+   constructor(id:number, titulo: string, descripcion: string, imagen: string, setList1: string[], setList2: string[], setList3: string[], setList4: string[], setList5: string[], setList6: string[], setList7: string[], setList8: string[], imagenModa1: string, imagenModa2: string, textoModa1: string, textoModa2: string, ventas: number) {
        this.id = id;
        this.titulo = titulo;
        this.descripcion = descripcion;
@@ -33,6 +34,7 @@ export class Concierto {
        this.imagenModa2 = imagenModa2;
        this.textoModa1 = textoModa1;
        this.textoModa2 = textoModa2;
+       this.ventas = ventas;
    }
 
    public getID():number{
@@ -96,5 +98,8 @@ export class Concierto {
 
    public getTextoModa2(): string {
        return this.textoModa2;
+   }
+   public getVentas(): number {
+        return this.ventas;
    }
 }

@@ -1,5 +1,5 @@
 var Concierto = /** @class */ (function () {
-    function Concierto(id, titulo, descripcion, imagen, setList1, setList2, setList3, setList4, setList5, setList6, setList7, setList8, imagenModa1, imagenModa2, textoModa1, textoModa2) {
+    function Concierto(id, titulo, descripcion, imagen, setList1, setList2, setList3, setList4, setList5, setList6, setList7, setList8, imagenModa1, imagenModa2, textoModa1, textoModa2, ventas) {
         this.id = id;
         this.titulo = titulo;
         this.descripcion = descripcion;
@@ -16,6 +16,7 @@ var Concierto = /** @class */ (function () {
         this.imagenModa2 = imagenModa2;
         this.textoModa1 = textoModa1;
         this.textoModa2 = textoModa2;
+        this.ventas = ventas;
     }
     Concierto.prototype.getID = function () {
         return this.id;
@@ -64,6 +65,9 @@ var Concierto = /** @class */ (function () {
     };
     Concierto.prototype.getTextoModa2 = function () {
         return this.textoModa2;
+    };
+    Concierto.prototype.getVentas = function () {
+        return this.ventas;
     };
     return Concierto;
 }());
